@@ -23,4 +23,12 @@ if (window.console) {
     mapped.subscribe(function (x) {
         console.log(x);
     });
+
+    var two = Rx.Observable.timer(2000).mapTo("2secs");
+    var four = Rx.Observable.timer(4000).mapTo("4secs");
+
+    var merged = two.merge(four);
+    merged.subscribe(function (x) {
+        console.log(x);
+    });
 }
