@@ -31,4 +31,23 @@ if (window.console) {
     merged.subscribe(function (x) {
         console.log(x);
     });
+
+    var observableA = Rx.Observable.interval(1000).take(5);
+    var observableB = Rx.Observable.interval(2000).take(5);
+    var observableC = Rx.Observable.interval(3000).take(5);
+
+    // 複雑な条件をpatternにします。
+    var pattern = observableA.and(observableB);
+
+    // thenでpatternが起きたらどうするかのplanを作ります。
+    var plan = pattern.thenDo(function (x, y, z) {
+        return "3つ揃ったよ!";
+    });
+
+    //whenでシーケンスを取り出そう。
+    var complexCondition = Rx.Observable.when(plan);
+
+    complexCondition.subscribe(function (x) {
+        console.log(x);
+    });
 }
