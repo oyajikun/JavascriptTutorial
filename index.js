@@ -2,7 +2,7 @@
  * Created by tomoya.igarashi on 2017/01/20.
  */
 if (window.console) {
-    console.log("Welcome to JavaScript!");
+    console.log("index.js : Welcome to JavaScript!");
 
     var requestStream = Rx.Observable.create(function(observer) {
         observer.next("https://api.github.com/users");
@@ -13,6 +13,6 @@ if (window.console) {
     });
 
     responseStream.subscribe(function(response) {
-        console.table(response);
+        // console.table(response);
     });
 }
