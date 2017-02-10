@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:700);
+
+.price {
+    color: #c70506;
+    text-shadow: 2px 0 0 #FFFFFF, 0 2px 0 #FFFFFF, -2px 0 0 #FFFFFF, 0 -2px 0 #FFFFFF, 5px 4px 3px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-family: Poppins;
+    letter-spacing: -3px;
+}
+
+.price1 {
+    font-size: 78px;
+    margin-right: -5px;
+    font-style: italic;
+}
+
+.price2 {
+    font-size: 59px;
+    margin-right: 10px;
+    font-style: italic;
+}
+
+.yen {
+    font-size: 40px;
+}
