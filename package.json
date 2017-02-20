@@ -1,0 +1,12 @@
+{
+  "name": "RxJSTutorial",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@private.github.com:oyajikun/RxJSTutorial.git",
+  "author": "oyajikun <oyajikun>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ."
+  },
+  "dependencies": {}
+}
