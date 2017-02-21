@@ -1,4 +1,5 @@
 /lib/
+/dist/client-bundle.js*
 
 ### https://raw.github.com/github/gitignore/a98a0444694f30e52fb6eef9aec08e9b5e211a44/Global/JetBrains.gitignore
 
